@@ -24,6 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <div v-if="clickArr.length==4">Clicked 4 Times</div>
   <ul>
     <li>Windows width: {{ window_width }}, height: {{ window_height }}</li>
     <li>Mouse position is at: {{ move_x }}, {{ move_y }}</li>
